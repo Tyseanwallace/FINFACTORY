@@ -26,7 +26,14 @@ video is made. Facts checked November 2026; re-check the "Money rules" section e
    ("What age did you start?"). Never "follow for more" as the only ending.
 - Change the visual on every line (every 1.5-4 s). No line without a visual.
 - Show numbers on screen whenever they're spoken.
-- Humour lands best as a meme or a fake comment about 1/3 and 2/3 of the way through.
+- **Tone: sarcastic, deadpan, informative.** Talk like a smart friend roasting the situation, not the
+  viewer: "Congrats America, new record.", "Very adult plan.", "Wild, I know." Short punchy lines, dry
+  one-word reactions, mock-serious delivery. The joke always carries a real fact or number; every
+  sarcastic line still teaches something. Punch at banks, systems and situations, never at viewers,
+  groups of people or anyone's money struggles.
+- Memes every 3-4 lines as quick reaction beats: a caption above the image ("me checking my balance")
+  works best. Also use fake comments/posts for relatable reactions. Cartoon, animal and stock-style
+  templates only (no celebrities, politicians or real people), and no slurs or punching down.
 
 ## 3. Topic rules
 Good: money questions people in their late teens and 20s actually have (first paycheck, 401k match,

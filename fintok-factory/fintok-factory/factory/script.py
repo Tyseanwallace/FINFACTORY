@@ -17,8 +17,9 @@ VISUALS = """Every line gets exactly one "visual". Allowed visual types:
    # numbers are calculated by code, so use this for any investing-over-time math
 - {"type":"ticker","symbol":"SPY","period":"1y|5y|10y|max","title":"short title"}   # real price chart pulled live
 - {"type":"comment","user":"made_up_username","text":"a funny/relatable comment","stamp":"optional red stamp text"}
-- {"type":"meme","idea":"what the joke/reaction is","top":"top text or empty","bottom":"bottom text or empty"}
-Rules: change the visual on every line. Use a meme at most every 4-5 lines and only where it lands a joke.
+- {"type":"meme","idea":"what the joke/reaction is","label":"caption shown ABOVE the meme, e.g. 'me checking my balance' (or empty)","top":"text on the image or empty","bottom":"text on the image or empty"}
+   # prefer "label" (caption above the image, like meme pages do); use top/bottom only for classic two-line memes
+Rules: change the visual on every line. Use a meme every 3-4 lines, wherever a sarcastic reaction lands the point.
 Never put a real person's name or a real company's logo in a visual. Characters are made up."""
 
 SYSTEM = """You write scripts for a faceless finance TikTok channel. Your scripts get people to watch

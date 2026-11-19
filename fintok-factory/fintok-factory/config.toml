@@ -28,7 +28,7 @@ max_seconds = 95
 music_volume = 0.08                # 0 to turn off. Put royalty-free tracks in assets/music/
 
 [review]
-memes = true                       # ask you to approve each meme before rendering
+memes = false                      # false = memes are picked automatically. true = approve each one first
 script = true                      # show the script and let you approve/edit before voicing
 
 [posting]

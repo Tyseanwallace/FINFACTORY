@@ -5,3 +5,5 @@ __pycache__/
 output/*/scenes/
 output/*/*.wav
 output/*/scenes.txt
+library/templates/
+library/imgflip_templates.json

@@ -1,0 +1,8 @@
+[ ] Length is 93s (OK, over 1 minute)
+[ ] FREE ElevenLabs plan: don't monetize this video (no Creator Rewards, sponsors or affiliate links)
+[ ] Watched it once start to finish - every number and meme looks right
+[ ] Turn ON 'AI-generated content' in TikTok's post settings (AI voice = realistic AI audio)
+[ ] If the video promotes ANY product, brand or your own business: turn on 'Content disclosure'
+[ ] Pick a trending sound only if it's commercially cleared (or keep original audio)
+[ ] Pin a comment that asks a question to start replies
+[ ] After 48h, log views + avg watch % in library/performance.csv

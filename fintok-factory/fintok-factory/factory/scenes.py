@@ -55,7 +55,7 @@ def wrap(s, size, maxw, w="Bold"):
 def fit_lines(s, size, maxw, max_lines, w="Bold"):
     while size > 40:
         ls = wrap(s, size, maxw, w)
-        if len(ls) <= max_lines: return ls, size
+        if len(ls) <= max_lines and all(F(size, w).getlength(l) <= maxw for l in ls): return ls, size
         size -= 8
     return wrap(s, size, maxw, w), size
 
@@ -125,7 +125,7 @@ def prepare(v):
             return {"type": "caption", "words": v.get("title") or v.get("symbol", "")}
     elif t == "meme":
         if not v.get("image"):
-            return {"type": "caption", "words": v.get("top") or v.get("bottom") or v.get("idea", "")}
+            return {"type": "caption", "words": v.get("label") or v.get("top") or v.get("bottom") or v.get("idea", "")}
         v["_img"] = Image.open(v["image"]).convert("RGB")
     return v
 
@@ -287,21 +287,35 @@ def meme_card(img, top, bottom, maxw=960, maxh=1150):
     return img
 
 
+def _meme_layout(v):
+    """Caption above the image (meme-page style) when there's a label, else the image alone."""
+    label = (v.get("label") or "").strip()
+    if not label:
+        return [], 0, meme_card(v["_img"], v.get("top", ""), v.get("bottom", "")), 930
+    ls, size = fit_lines(label, 72, 940, 3)
+    text_h = len(ls) * size * 1.22
+    card = meme_card(v["_img"], v.get("top", ""), v.get("bottom", ""), maxh=1180 - text_h)
+    total = text_h + 50 + card.height
+    top_y = 960 - total / 2
+    return ls, size, card, top_y + text_h + 50 + card.height / 2
+
+
 def s_meme(d, im, t, dur, v):
-    if "_card" not in v:
-        v["_card"] = meme_card(v["_img"], v.get("top", ""), v.get("bottom", ""))
-    s = pop(t)
+    if "_layout" not in v:
+        v["_layout"] = _meme_layout(v)
+    ls, size, c, cy = v["_layout"]
+    y0 = cy - c.height / 2 - 50 - len(ls) * size * 1.22
+    for i, l in enumerate(ls):
+        text_c(d, (540, y0 + (i + .5) * size * 1.22), l, size, scale=pop(t))
+    s = pop(t - (.12 if ls else 0))
     if s <= .01: return
-    c = v["_card"]
     c2 = c.resize((max(1, int(c.width * s)), max(1, int(c.height * s))))
-    im.paste(c2, (540 - c2.width // 2, 930 - c2.height // 2))
+    im.paste(c2, (540 - c2.width // 2, int(cy - c2.height / 2)))
 
 
-def draw_meme_preview(img_path, top, bottom, out):
-    im = Image.new("RGB", (W, H), WHITE)
-    c = meme_card(Image.open(img_path).convert("RGB"), top, bottom)
-    im.paste(c, (540 - c.width // 2, 930 - c.height // 2))
-    im.resize((540, 960)).save(out)
+def draw_meme_preview(img_path, top, bottom, out, label=""):
+    v = {"_img": Image.open(img_path).convert("RGB"), "top": top, "bottom": bottom, "label": label}
+    frame(dict(v, type="meme"), 1.0, 1.0, zoom=False).resize((540, 960)).save(out)
 
 
 SCENES = {"caption": s_caption, "big": s_big, "person": s_person, "duo": s_duo, "stat": s_stat,

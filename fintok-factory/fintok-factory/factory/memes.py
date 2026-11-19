@@ -50,6 +50,17 @@ def pick(cfg, script: dict, run_dir: Path):
         return script
     temps = templates(cfg)
     by_id = {t["id"]: t for t in temps}
+    # memes that already name a template (e.g. hand-written scripts) just need the image downloaded
+    for i, ln in beats:
+        v = ln["visual"]
+        if v.get("template_id") in by_id and not v.get("image"):
+            t = by_id[v["template_id"]]
+            v.update({"template_name": t["name"], "image": str(template_image(cfg, t))})
+            _save_approved(cfg, {"id": t["id"], "name": t["name"], "idea": v.get("idea", ""),
+                                 "label": v.get("label", ""), "top": v.get("top", ""), "bottom": v.get("bottom", "")})
+    beats = [(i, ln) for i, ln in beats if not ln["visual"].get("image")]
+    if not beats:
+        return script
     liked = approved(cfg)
     menu = "\n".join(f'{t["id"]}: {t["name"]} (text boxes: {t["box_count"]})' for t in temps)
     prompt = f"""Pick meme templates for these beats in a finance TikTok.
@@ -62,10 +73,11 @@ Available templates:
 Beats:
 {json.dumps([{"line": i, "spoken": ln["text"], **ln["visual"]} for i, ln in beats], indent=1)}
 
-For each beat return the 3 best template ids, best first, and short top/bottom text (max 6 words each,
-can be empty) that works on that template. Prefer templates without famous people (cartoons,
+For each beat return the 3 best template ids, best first, plus a "label" (caption shown above the image,
+max 10 words, the main joke) and optional short top/bottom text on the image (max 6 words each, usually
+empty when there is a label). Prefer templates without famous people (cartoons,
 animals, stock-photo style). Never write text that makes a real person seem to endorse anything. Return ONLY JSON:
-{{"picks": [{{"line": 0, "options": [{{"id": "...", "top": "...", "bottom": "..."}}]}}]}}"""
+{{"picks": [{{"line": 0, "options": [{{"id": "...", "label": "...", "top": "...", "bottom": "..."}}]}}]}}"""
     data, _ = llm.ask_json(cfg, "You are a meme editor with great comedic timing.", prompt)
     picks = {p["line"]: [o for o in p["options"] if o["id"] in by_id] for p in data["picks"]}
 
@@ -79,7 +91,7 @@ animals, stock-photo style). Never write text that makes a real person seem to e
             if not cfg["review"]["memes"]:
                 choice = (t, o, img); break
             prev = run_dir / f"meme_preview_line{i}.png"
-            draw_meme_preview(img, o["top"], o["bottom"], prev)
+            draw_meme_preview(img, o.get("top", ""), o.get("bottom", ""), prev, o.get("label", ""))
             webbrowser.open(prev.resolve().as_uri())
             print(f'\nLine {i}: "{ln["text"]}"\n  Meme: {t["name"]}  | top: "{o["top"]}"  bottom: "{o["bottom"]}"')
             a = input("  [Enter]=use it  n=next option  e=edit text  c=caption card instead: ").strip().lower()
@@ -92,7 +104,8 @@ animals, stock-photo style). Never write text that makes a real person seem to e
         if choice:
             t, o, img = choice
             ln["visual"].update({"template_id": t["id"], "template_name": t["name"], "image": str(img),
-                                 "top": o["top"], "bottom": o["bottom"]})
+                                 "label": o.get("label", ln["visual"].get("label", "")),
+                                 "top": o.get("top", ""), "bottom": o.get("bottom", "")})
             _save_approved(cfg, {"id": t["id"], "name": t["name"], "idea": ln["visual"].get("idea", ""),
                                  "top": o["top"], "bottom": o["bottom"]})
         else:  # no meme approved -> fall back to a caption card

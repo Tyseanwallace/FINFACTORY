@@ -1,0 +1,293 @@
+{
+ "title": "Record card debt, sarcastic cut - Maya's $100/month plan",
+ "caption": "Maya's very adult plan: $100 a month on a $5K card. The bank loved it. Here's the math.",
+ "hashtags": [
+  "#creditcarddebt",
+  "#creditcards",
+  "#moneyhumor"
+ ],
+ "lines": [
+  {
+   "text": "Congratulations, America. We just set a new record.",
+   "visual": {
+    "type": "big",
+    "words": "CONGRATS.",
+    "color": "black"
+   },
+   "dur": 3.325
+  },
+  {
+   "text": "One point two nine trillion dollars. In credit card debt.",
+   "visual": {
+    "type": "stat",
+    "value": "$1.29T",
+    "label": "US credit card debt. a new record.",
+    "color": "red"
+   },
+   "dur": 4.111
+  },
+  {
+   "text": "That's straight from the New York Fed. Just in time for holiday shopping.",
+   "visual": {
+    "type": "meme",
+    "template_id": "55311130",
+    "idea": "everything is fine while on fire",
+    "label": "the American wallet heading into the holidays",
+    "template_name": "This Is Fine",
+    "image": "/home/user/FINFACTORY/fintok-factory/fintok-factory/library/templates/55311130.jpg"
+   },
+   "dur": 3.691
+  },
+  {
+   "text": "So let's meet Maya. Twenty four. Financially responsible. Allegedly.",
+   "visual": {
+    "type": "person",
+    "name": "Maya",
+    "color": "orange",
+    "tag": "AGE 24"
+   },
+   "dur": 4.99
+  },
+  {
+   "text": "Maya has five thousand dollars on a card charging about twenty one percent.",
+   "visual": {
+    "type": "stat",
+    "value": "21% APR",
+    "label": "on a $5,000 balance",
+    "color": "red"
+   },
+   "dur": 4.165
+  },
+  {
+   "text": "Which, fun fact, is basically the average rate right now. So, not unlucky. Just normal.",
+   "visual": {
+    "type": "caption",
+    "words": "that's the AVERAGE"
+   },
+   "dur": 6.129
+  },
+  {
+   "text": "Maya's plan? Pay a hundred bucks a month. Very adult.",
+   "visual": {
+    "type": "stat",
+    "value": "$100/mo",
+    "label": "a very adult plan",
+    "color": "blue"
+   },
+   "dur": 4.691
+  },
+  {
+   "text": "She feels incredible about it.",
+   "visual": {
+    "type": "meme",
+    "template_id": "163573",
+    "idea": "proud of a bad plan",
+    "label": "maya after setting up $100 autopay on a 21% card",
+    "template_name": "Imagination Spongebob",
+    "image": "/home/user/FINFACTORY/fintok-factory/fintok-factory/library/templates/163573.jpg"
+   },
+   "dur": 1.689
+  },
+  {
+   "text": "Here's the fun part. Eighty seven fifty of that first payment? Just interest.",
+   "visual": {
+    "type": "big",
+    "words": "$87.50 INTEREST",
+    "color": "red"
+   },
+   "dur": 4.718
+  },
+  {
+   "text": "So her actual balance drops by twelve dollars and fifty cents.",
+   "visual": {
+    "type": "stat",
+    "value": "-$12.50",
+    "label": "actual progress. per month.",
+    "color": "red"
+   },
+   "dur": 3.339
+  },
+  {
+   "text": "Twelve fifty.",
+   "visual": {
+    "type": "meme",
+    "template_id": "148909805",
+    "idea": "awkward side glance",
+    "label": "maya seeing her $5,000 balance go down by $12.50",
+    "template_name": "Monkey Puppet",
+    "image": "/home/user/FINFACTORY/fintok-factory/fintok-factory/library/templates/148909805.jpg"
+   },
+   "dur": 0.952
+  },
+  {
+   "text": "At this pace, she's paying that card for ten whole years.",
+   "visual": {
+    "type": "big",
+    "words": "10 YEARS",
+    "color": "red"
+   },
+   "dur": 3.347
+  },
+  {
+   "text": "Her card will be paid off around the same time she finally gets a raise.",
+   "visual": {
+    "type": "meme",
+    "template_id": "4087833",
+    "idea": "waiting forever",
+    "label": "maya waiting for her card to be paid off",
+    "template_name": "Waiting Skeleton",
+    "image": "/home/user/FINFACTORY/fintok-factory/fintok-factory/library/templates/4087833.jpg"
+   },
+   "dur": 3.957
+  },
+  {
+   "text": "And the interest? Almost seven thousand dollars. On a five thousand dollar balance.",
+   "visual": {
+    "type": "stat",
+    "value": "$6,986",
+    "label": "interest. on a $5,000 balance.",
+    "color": "red"
+   },
+   "dur": 5.421
+  },
+  {
+   "text": "So she paid for her stuff. And then paid for it again. Plus tip.",
+   "visual": {
+    "type": "comment",
+    "user": "maya_pays_100",
+    "text": "so i bought it once... and then paid for it again??",
+    "stamp": "TOTAL: $11,986"
+   },
+   "dur": 4.831
+  },
+  {
+   "text": "Now, plot twist. Same card. Same balance. Two fifty a month instead.",
+   "visual": {
+    "type": "person",
+    "name": "Maya",
+    "color": "green",
+    "tag": "$250/MO"
+   },
+   "dur": 4.602
+  },
+  {
+   "text": "She's done in twenty five months.",
+   "visual": {
+    "type": "big",
+    "words": "25 MONTHS",
+    "color": "green"
+   },
+   "dur": 1.818
+  },
+  {
+   "text": "Interest? About twelve hundred bucks. Not seven thousand.",
+   "visual": {
+    "type": "bars",
+    "title": "interest paid",
+    "bars": [
+     {
+      "label": "$100/mo",
+      "value": 6986,
+      "display": "$6,986",
+      "color": "red"
+     },
+     {
+      "label": "$250/mo",
+      "value": 1208,
+      "display": "$1,208",
+      "color": "green"
+     }
+    ]
+   },
+   "dur": 3.966
+  },
+  {
+   "text": "That's fifty eight hundred dollars that stays with Maya, instead of the bank.",
+   "visual": {
+    "type": "meme",
+    "template_id": "247375501",
+    "idea": "strong vs weak version",
+    "label": "maya paying $250 a month vs maya paying $100 a month",
+    "template_name": "Buff Doge vs. Cheems",
+    "image": "/home/user/FINFACTORY/fintok-factory/fintok-factory/library/templates/247375501.png"
+   },
+   "dur": 4.063
+  },
+  {
+   "text": "So how do people actually get out? Paying more than the minimum. Hitting the highest rate card first. Or just calling and asking for a lower rate.",
+   "visual": {
+    "type": "list",
+    "title": "ways people get out",
+    "items": [
+     "pay more than the minimum",
+     "highest rate card first",
+     "ask for a lower rate"
+    ]
+   },
+   "dur": 8.288
+  },
+  {
+   "text": "Yes. You can just ask. Wild, I know.",
+   "visual": {
+    "type": "meme",
+    "template_id": "155067746",
+    "idea": "shocked reaction",
+    "label": "finding out you can just ASK for a lower rate",
+    "template_name": "Surprised Pikachu",
+    "image": "/home/user/FINFACTORY/fintok-factory/fintok-factory/library/templates/155067746.jpg"
+   },
+   "dur": 3.224
+  },
+  {
+   "text": "Because five thousand dollars of stuff should not cost twelve.",
+   "visual": {
+    "type": "big",
+    "words": "NOT $12K.",
+    "color": "black"
+   },
+   "dur": 2.914
+  },
+  {
+   "text": "So what's the APR on your card? Be honest. Comments.",
+   "visual": {
+    "type": "caption",
+    "words": "what's your APR? be honest."
+   },
+   "dur": 4.339
+  }
+ ],
+ "claims": [
+  {
+   "claim": "US credit card balances hit a record ~$1.29 trillion ($1.285T) in Q3 2026",
+   "source": "https://www.newyorkfed.org/newsevents/news/research/2026/20261110"
+  },
+  {
+   "claim": "Average credit card rate about 21% (Fed G.19: 21.19% all accounts, 22.36% accounts assessed interest)",
+   "source": "https://www.federalreserve.gov/releases/g19/20261106/g19.pdf"
+  },
+  {
+   "claim": "$5,000 at 21% APR: first month's interest $87.50, so principal drops $12.50; $100/mo takes 120 months and $6,986 interest (total ~$11,986); $250/mo takes 25 months and $1,208 interest; difference $5,778",
+   "source": "math (monthly compounding, APR/12)"
+  }
+ ],
+ "research_sources": [
+  {
+   "title": "New York Fed - Household Debt and Credit Report, Q3 2026 (Nov 10, 2026)",
+   "url": "https://www.newyorkfed.org/newsevents/news/research/2026/20261110"
+  },
+  {
+   "title": "Federal Reserve G.19 Consumer Credit release (Nov 6, 2026)",
+   "url": "https://www.federalreserve.gov/releases/g19/20261106/g19.pdf"
+  },
+  {
+   "title": "Bankrate - current credit card interest rates (avg 19.71%, Nov 4, 2026)",
+   "url": "https://www.bankrate.com/finance/credit-cards/credit-card-rates-forecast/"
+  }
+ ],
+ "fact_check": {
+  "passed": true,
+  "issues": [],
+  "sources": [],
+  "note": "Checked by hand in Claude Code (no Anthropic API key): record debt figure against the NY Fed release, rate against Fed G.19, payoff numbers recomputed in Python. Jokes punch at the situation/banks, not viewers. Memes: cartoon/animal templates only, no real people. Education only, no product or brand named."
+ }
+}
