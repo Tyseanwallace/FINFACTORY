@@ -146,7 +146,7 @@ def s_big(d, im, t, dur, v):
 
 def s_person(d, im, t, dur, v):
     avatar(d, 540, 760, 190, col(v.get("color")), pop(t), v.get("name"))
-    if v.get("tag"): pill(d, 540, 1450, v["tag"], 80, scale=pop(t - .35))
+    if v.get("tag"): pill(d, 540, 1560, v["tag"], 80, scale=pop(t - .35))
 
 
 def s_duo(d, im, t, dur, v):
