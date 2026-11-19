@@ -1,0 +1,8 @@
+anthropic>=0.40
+python-dotenv
+requests
+numpy
+pillow>=10
+soundfile
+yfinance
+kokoro-onnx

@@ -1,0 +1,35 @@
+# ---------------------------------------------------------------
+# FinTok Factory settings. Edit these, not the code.
+# API keys go in .env (copy .env.example to .env).
+# ---------------------------------------------------------------
+
+[channel]
+name = "Ty Talks Money"            # placeholder - change to your handle
+niche = "personal finance and investing for people in their late teens and 20s"
+voice_style = "confident, a little funny, explains like a smart friend, never preachy"
+audience_country = "US"
+
+[ai]
+model = "claude-sonnet-5-5"        # used for trends, scripts and fact checks
+max_searches = 6                   # web searches allowed per research step
+
+[voice]
+provider = "elevenlabs"            # "elevenlabs" or "kokoro" (free, open source, runs locally)
+elevenlabs_plan = "free"           # "free" or "paid". Free = non-commercial + must credit ElevenLabs
+elevenlabs_voice_id = "pNInz6obpgDQGcFmaJgB"   # "Adam". Swap for any voice ID from your ElevenLabs library
+elevenlabs_model = "eleven_multilingual_v2"
+kokoro_voice = "am_michael"        # am_michael, am_adam, am_puck, af_heart, af_bella ...
+speed = 1.1
+
+[video]
+fps = 30                           # output is always 1080x1920 (vertical)
+min_seconds = 62                   # Creator Rewards only pays on videos 1 min+. Keep a safety margin.
+max_seconds = 95
+music_volume = 0.08                # 0 to turn off. Put royalty-free tracks in assets/music/
+
+[review]
+memes = true                       # ask you to approve each meme before rendering
+script = true                      # show the script and let you approve/edit before voicing
+
+[posting]
+base_hashtags = ["#personalfinance", "#investing", "#moneytok", "#fintok"]

@@ -1,0 +1,224 @@
+{
+ "title": "Jake vs Mike - starting early beats investing more",
+ "caption": "He invested $60K LESS and still ended up with more money. Here's how.",
+ "hashtags": [
+  "#compoundinterest",
+  "#investingforbeginners",
+  "#moneytips"
+ ],
+ "lines": [
+  {
+   "text": "This guy invested sixty thousand dollars less than his friend, and still retired richer.",
+   "visual": {
+    "type": "big",
+    "words": "$60K LESS",
+    "color": "green"
+   }
+  },
+  {
+   "text": "Two friends. Same job. Same paycheck.",
+   "visual": {
+    "type": "duo",
+    "left": "Jake",
+    "right": "Mike",
+    "title": "same job. same pay."
+   }
+  },
+  {
+   "text": "Jake starts investing at twenty.",
+   "visual": {
+    "type": "person",
+    "name": "Jake",
+    "color": "green",
+    "tag": "AGE 20"
+   }
+  },
+  {
+   "text": "Two hundred dollars a month, into an index fund.",
+   "visual": {
+    "type": "stat",
+    "value": "$200/mo",
+    "label": "into an index fund",
+    "color": "green"
+   }
+  },
+  {
+   "text": "Then at thirty, he stops. Never adds another cent.",
+   "visual": {
+    "type": "big",
+    "words": "STOPS AT 30",
+    "color": "red"
+   }
+  },
+  {
+   "text": "Mike waits until thirty.",
+   "visual": {
+    "type": "person",
+    "name": "Mike",
+    "color": "blue",
+    "tag": "AGE 30"
+   }
+  },
+  {
+   "text": "Then he puts in two hundred a month, for thirty five straight years.",
+   "visual": {
+    "type": "caption",
+    "words": "35 straight years"
+   }
+  },
+  {
+   "text": "So Jake put in twenty four thousand dollars. Mike put in eighty four thousand.",
+   "visual": {
+    "type": "bars",
+    "title": "money put in",
+    "bars": [
+     {
+      "label": "Jake",
+      "value": 24000,
+      "color": "green"
+     },
+     {
+      "label": "Mike",
+      "value": 84000,
+      "color": "blue"
+     }
+    ]
+   }
+  },
+  {
+   "text": "So who has more at sixty five?",
+   "visual": {
+    "type": "caption",
+    "words": "who has more at 65?"
+   }
+  },
+  {
+   "text": "Jake. And it's not even close.",
+   "visual": {
+    "type": "compound",
+    "mode": "result",
+    "title": "balance at 65",
+    "rate": 0.08,
+    "end_age": 65,
+    "people": [
+     {
+      "name": "Jake",
+      "monthly": 200,
+      "start_age": 20,
+      "stop_age": 30,
+      "color": "green"
+     },
+     {
+      "name": "Mike",
+      "monthly": 200,
+      "start_age": 30,
+      "stop_age": 65,
+      "color": "blue"
+     }
+    ]
+   }
+  },
+  {
+   "text": "Because those first ten years did the heavy lifting.",
+   "visual": {
+    "type": "compound",
+    "mode": "line",
+    "title": "account balance by age",
+    "rate": 0.08,
+    "end_age": 65,
+    "people": [
+     {
+      "name": "Jake",
+      "monthly": 200,
+      "start_age": 20,
+      "stop_age": 30,
+      "color": "green"
+     },
+     {
+      "name": "Mike",
+      "monthly": 200,
+      "start_age": 30,
+      "stop_age": 65,
+      "color": "blue"
+     }
+    ]
+   }
+  },
+  {
+   "text": "Every dollar Jake put in at twenty had forty five years to compound.",
+   "visual": {
+    "type": "caption",
+    "words": "45 years to compound"
+   }
+  },
+  {
+   "text": "And the eight percent we used isn't made up. It's close to the stock market's long run average, with plenty of bad years mixed in.",
+   "visual": {
+    "type": "ticker",
+    "symbol": "SPY",
+    "period": "max",
+    "title": "the S&P 500, all of it"
+   }
+  },
+  {
+   "text": "Waiting for the perfect time cost Mike more than any bad stock pick ever could.",
+   "visual": {
+    "type": "comment",
+    "user": "mike_waits_for_the_dip",
+    "text": "i'll start investing when the market calms down",
+    "stamp": "cost: -$137K"
+   }
+  },
+  {
+   "text": "And no, you don't need to pick stocks. A simple index fund that owns the whole market is how most people do this.",
+   "visual": {
+    "type": "caption",
+    "words": "no stock picking needed"
+   }
+  },
+  {
+   "text": "So if you're in your twenties, here's the move.",
+   "visual": {
+    "type": "caption",
+    "words": "in your 20s?"
+   }
+  },
+  {
+   "text": "Start small. Automate it. And don't stop.",
+   "visual": {
+    "type": "list",
+    "title": "the move",
+    "items": [
+     "start small",
+     "automate it",
+     "don't stop"
+    ]
+   }
+  },
+  {
+   "text": "The best time to start was ten years ago.",
+   "visual": {
+    "type": "caption",
+    "words": "10 years ago"
+   }
+  },
+  {
+   "text": "The second best time is today.",
+   "visual": {
+    "type": "big",
+    "words": "TODAY.",
+    "color": "black"
+   }
+  }
+ ],
+ "claims": [
+  {
+   "claim": "Jake ~$596K vs Mike ~$459K at 65 with 8% avg return",
+   "source": "math"
+  },
+  {
+   "claim": "8% is close to the S&P 500 long-run average",
+   "source": "common knowledge (historically ~10% nominal incl. dividends)"
+  }
+ ]
+}
