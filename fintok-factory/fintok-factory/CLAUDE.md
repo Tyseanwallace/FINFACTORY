@@ -44,6 +44,10 @@ on anything that costs money, and prefer simple, working solutions over clever o
 - After any change to rendering, render one example and look at a few frames before saying it works.
 - Keep costs visible: if a change adds a paid API or raises usage, say roughly what it costs.
 
+## Skills (permanent know-how)
+When a workflow works end to end, save it as a skill in `.claude/skills/<name>/SKILL.md` at the repo
+root, and update the skill whenever it improves. Current skills: `make-fintok-video`.
+
 ## Roadmap (build these with Ty, roughly in this order)
 1. **Review screen:** replace the terminal meme/script review with a small local web page (one page,
    approve/swap buttons, edit text inline).
